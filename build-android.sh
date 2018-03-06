@@ -15,6 +15,10 @@ APK_FILE_NAME=${APK_FILE_NAME-"release-signed.apk"}
 TMP_APP_PATH=/tmp/app
 TMP_BUILD_PATH=/tmp/build
 
+echo "Fixing PATH..."
+export PATH=$PATH:/root/.sdkman/candidates/gradle/current/bin
+echo $PATH
+
 echo "Launching mobile build..."
 
 mkdir -p ${TMP_APP_PATH}

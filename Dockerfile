@@ -44,7 +44,6 @@ RUN apt-get update && apt-get install -y openjdk-8-jdk wget curl zip \
 
 # Install gradle
 RUN curl -s "https://get.sdkman.io" | bash
-RUN chmod +x /root/.sdkman/bin/sdkman-init.sh && /root/.sdkman/bin/sdkman-init.sh
 RUN /bin/bash -c "source /root/.sdkman/bin/sdkman-init.sh && sdk install gradle 4.6"
 
 # Install Meteor and Node
